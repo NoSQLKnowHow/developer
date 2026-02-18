@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you'll connect to Oracle Autonomous Database and explore the CityPulse knowledge base — a collection of operational documents including inspection reports, maintenance procedures, emergency protocols, and engineering guides. You'll also see firsthand why traditional keyword search fails for semantic queries, setting up the problem that vector search will solve in the remaining labs.
+In this lab, you'll connect to an Oracle Autonomous Database and explore the CityPulse knowledge base, which is a collection of operational documents including inspection reports, maintenance procedures, emergency protocols, and engineering guides. You'll also see firsthand why traditional keyword search fails for semantic queries, setting up the problem that vector search solves in the subsequent labs.
 
 **Estimated Time:** 4 minutes
 

@@ -1,30 +1,30 @@
 # Introduction
 
-## About this Workshop
+## About this workshop
 
-Keyword search has served us well for decades, but it has a fundamental limitation: it can only find what you literally typed. Search for "bridge shaking" and you'll miss the document titled *Structural Vibration Anomaly Response Protocol* — even though it's exactly what you need.
+Keyword search, also known as lexical search, has served us well for decades, but it has a fundamental limitation: it can only find what you literally typed. Search for "bridge shaking" and you'll miss the document titled "Structural vibration anomaly response protocol" or an image of a bridge physically shaking — even though it's likely what you need.
 
-**Vector search** solves this by representing text as mathematical vectors that capture *meaning*, not just words. In this workshop, you'll build a complete vector search system from scratch using **Oracle Database 26ai** on **Oracle Autonomous Database**, and then use it to power a retrieval-augmented generation (RAG) pipeline with **OCI Generative AI**.
+**Vector search** solves this by representing text, images, video, etc. as mathematical vectors that capture _semantic meaning_, not just words. In this workshop, you'll build a complete vector search system from scratch using **Oracle AI Database 26ai** on **Oracle Autonomous Database**, and then use it to power a Retrieval-Augmented Generation (RAG) pipeline with **OCI Generative AI** as the LLM.
 
 You'll work with the **CityPulse** smart city monitoring platform — a realistic dataset of inspection reports, maintenance procedures, emergency protocols, and engineering guides for a city's sensor and infrastructure network. By the end, you'll have turned a table of plain text documents into a searchable, indexed, AI-powered knowledge system.
 
 <!-- TODO: Add architecture diagram showing the workshop flow -->
 ![Workshop Architecture](images/workshop-architecture.png " ")
 
-### What You'll Build
+### What you'll build
 
 Throughout this workshop, you will create:
 
-* A **chunked and embedded knowledge base** using Oracle's VECTOR\_CHUNKS and built-in ONNX embedding model
+* A **chunked and embedded knowledge base** using Oracle's VECTOR\_CHUNKS and its built-in ONNX embedding model
 * **Vector similarity searches** using cosine, dot product, and euclidean distance metrics
 * An **HNSW vector index** for fast approximate nearest neighbor search
 * A **RAG pipeline** that retrieves relevant context and generates answers using OCI Generative AI
 
-### Workshop Structure
+### Workshop structure
 
 This workshop is available in two formats:
 
-**30-Minute Version (5 Labs):**
+**30-Minute version (5 labs):**
 
 | Lab | Title | Duration |
 |-----|-------|----------|
@@ -34,7 +34,7 @@ This workshop is available in two formats:
 | 4 | Indexing for Performance: HNSW | 5 min |
 | 5 | Putting It Together: Simple RAG | 9 min |
 
-**45-Minute Version (6 Labs):**
+**45-Minute version (6 labs):**
 
 | Lab | Title | Duration |
 |-----|-------|----------|
@@ -45,7 +45,7 @@ This workshop is available in two formats:
 | 5 | Hybrid Search: Best of Both Worlds | 10 min |
 | 6 | Putting It Together: RAG with Hybrid Retrieval | 12 min |
 
-### The CityPulse Dataset
+### The CityPulse dataset
 
 CityPulse is a smart city infrastructure monitoring platform with 50 sensors across 5 districts tracking bridges, water systems, power distribution, traffic, and air quality. The **city\_knowledge\_base** table contains 36 operational documents including:
 
@@ -59,21 +59,6 @@ CityPulse is a smart city infrastructure monitoring platform with 50 sensors acr
 * Training materials for new technicians
 
 This is the same CityPulse platform used in companion workshops on converged database capabilities and AI agents.
-
-## About Oracle AI Vector Search
-
-Oracle AI Vector Search is a feature of Oracle Database that enables semantic search on unstructured data. Key capabilities you'll use in this workshop include:
-
-* **Native VECTOR data type** for storing embeddings alongside relational data
-* **VECTOR\_CHUNKS function** for splitting text into embeddable pieces
-* **VECTOR\_EMBEDDING function** with built-in ONNX models for generating embeddings inside the database
-* **VECTOR\_DISTANCE function** for similarity search with cosine, dot product, or euclidean metrics
-* **HNSW and IVF indexes** for fast approximate nearest neighbor search
-* **Oracle Text integration** for hybrid keyword + vector search
-
-## About OCI Generative AI
-
-Oracle Cloud Infrastructure Generative AI provides large language models for text generation. In this workshop, you'll use it to build a RAG pipeline that generates grounded answers from retrieved CityPulse knowledge base content.
 
 ## Objectives
 
@@ -97,11 +82,26 @@ This lab assumes you have:
 
 **Note:** The CityPulse schema, knowledge base documents, and ONNX embedding model are pre-loaded in your environment.
 
-## Learn More
+## Learn more (Optional)
 
 * [Oracle AI Vector Search Documentation](https://docs.oracle.com/en/database/oracle/oracle-database/26/vecse/)
 * [OCI Generative AI Documentation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/home.htm)
 * [VECTOR\_CHUNKS Documentation](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_chunks.html)
+
+## About Oracle AI vector search (Optional)
+
+Oracle AI Vector Search is a feature of Oracle AI Database that enables semantic search on unstructured data. Key capabilities you'll use in this workshop include:
+
+* **Native VECTOR data type** for storing embeddings alongside relational data
+* **VECTOR\_CHUNKS function** for splitting text into embeddable pieces
+* **VECTOR\_EMBEDDING function** with built-in ONNX models for generating embeddings inside the database
+* **VECTOR\_DISTANCE function** for similarity search with cosine, dot product, or euclidean metrics
+* **HNSW and IVF indexes** for fast approximate nearest neighbor search
+* **Oracle Text integration** for hybrid keyword + vector search
+
+## About OCI Generative AI (Optional)
+
+Oracle Cloud Infrastructure Generative AI provides large language models for text generation. In this workshop, you'll use it to build a RAG pipeline that generates grounded answers from retrieved CityPulse knowledge base content.
 
 ## Acknowledgements
 
