@@ -1,0 +1,51 @@
+{
+  "workshoptitle": "Building with Vector Search and Embeddings",
+  "help": "livelabs-help-db_us@oracle.com",
+  "tutorials": [
+    {
+      "title": "Introduction",
+      "description": "Overview of vector search, embeddings, and the CityPulse dataset",
+      "filename": "../../introduction/introduction.md"
+    },
+    {
+      "title": "Lab 1: Connect & Explore the Knowledge Base",
+      "description": "Connect to Oracle ADB and see why keyword search fails for semantic queries",
+      "filename": "../../lab1-connect/connect.md"
+    },
+    {
+      "title": "Lab 2: Chunk & Embed — From Text to Vectors",
+      "description": "Split documents into chunks and generate vector embeddings with ONNX",
+      "filename": "../../lab2-chunk-embed/chunk-embed.md"
+    },
+    {
+      "title": "Lab 3: Similarity Search & Distance Metrics",
+      "description": "Perform vector searches with cosine, dot product, and euclidean metrics",
+      "filename": "../../lab3-similarity-search/similarity-search.md"
+    },
+    {
+      "title": "Lab 4: Indexing for Performance — HNSW",
+      "description": "Create an HNSW vector index and observe the execution plan change",
+      "filename": "../../lab4-hnsw-indexing/hnsw-indexing.md"
+    },
+    {
+      "title": "Lab 5: Hybrid Search — Best of Both Worlds",
+      "description": "Combine Oracle Text keyword search with vector similarity search",
+      "filename": "../../lab5-hybrid-search/hybrid-search.md"
+    },
+    {
+      "title": "Lab 6: Putting It Together — RAG with Hybrid Retrieval",
+      "description": "Build a RAG pipeline and compare vector-only vs. hybrid retrieval",
+      "filename": "../../lab6-hybrid-rag/hybrid-rag.md"
+    },
+    {
+      "title": "Quiz",
+      "description": "Test your knowledge of vector search, hybrid search, and RAG",
+      "filename": "../../quiz/quiz-45min.md"
+    },
+    {
+      "title": "Need Help?",
+      "description": "Solutions to common problems and support contacts",
+      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-livelabs.md"
+    }
+  ]
+}
